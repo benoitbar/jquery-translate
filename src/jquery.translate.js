@@ -48,7 +48,9 @@ var i18n = function() {
             translations = translations.substr(0, translations.length-2);
             translations += "\n}";
 
-            console.info(translations);
+            try {
+                console.info(translations);
+            }catch(e){}
         }
 
         if( settings.lang !== undefined )

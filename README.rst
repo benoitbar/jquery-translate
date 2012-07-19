@@ -19,7 +19,7 @@ Add a css class for all html tag content you want to translate
     <p class="trans">My text to translate</p>
     ...
 
-Call the plugin or without options
+Call the plugin with or without options
 
     $('.trans').translate({
         lang : 'en',

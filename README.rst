@@ -23,8 +23,8 @@ Call the plugin with or without options
 
     $('.trans').translate({
         lang : 'en',
-        url : '/local/',            // Determine the url where the translation file are
-        showTranslations : false    // Show a strutured translation file in browser console
+        url : '/local/',
+        showTranslations : false
     });
 
 or    

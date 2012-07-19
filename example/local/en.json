@@ -1,0 +1,6 @@
+{
+    "Select your language" : "Select your language",
+    "I am a translated sentence key." : "I am a translated sentence.",
+    "I am a translated sentence key <br> with a return." : "I am a translated sentence <br> with a return.",
+    "I am a translated sentence key with <span class=\"red\">span.red</span>." : "I am a translated sentence with <span class=\"red\">span.red</span>."
+}

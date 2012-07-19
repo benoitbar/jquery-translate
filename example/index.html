@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>jQuery Translate</h1>
+        </div>
+    </header>
+    <section role="main">
+        <div class="container">
+            <div>
+                <span class="trans">Select your language</span>
+                <select id="language">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <hr />
+            <p class="trans">I am a translated sentence key.</p>
+            <p class="trans">I am a translated sentence key <br /> with a return.</p>
+            <p class="trans">I am a translated sentence key with <span class="red">span.red</span>.</p>
+            <hr />
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <small>jQuery Translate is Copyright © 2012 Benoît Bar. It is free software, and may be redistributed under the terms specified in the LICENSE file.</small>
+        </div>
+    </footer>
+    <script src="js/vendor/jquery-1.7.2.min.js"></script>
+    <script src="../src/jquery.translate.js"></script>
+    <script>
+        jQuery(function($){
+            // Translate the .trans elements
+            $('.trans').translate({
+                url : 'local/'
+            });
+
+            // Get the browser language and select correct option
+            $('#language').val(i18n.getLang());
+
+            // Translate the .trans elements when the selected language change
+            $('#language').on('change', function(){
+                var self = $(this);
+                $('.trans').translate({
+                    url : 'local/',
+                    lang : self.val()
+                });
+            });
+        });
+    </script>
+</body>
+</html>

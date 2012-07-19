@@ -1,0 +1,6 @@
+{
+    "Select your language" : "Choisissez votre langue",
+    "I am a translated sentence key." : "Je suis une phrase traduite.",
+    "I am a translated sentence key <br> with a return." : "Je suis une phrase traduite <br /> avec un saut &agrave; la ligne.",
+    "I am a translated sentence key with <span class=\"red\">span.red</span>." : "Je suis une phrase traduite avec un <span class=\"red\">span.red</span>."
+}
